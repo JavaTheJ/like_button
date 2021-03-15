@@ -9,19 +9,18 @@
   user-select: none;
 }
 
-.fa:hover {
-  color: darkblue;
-}
 </style>
 </head>
 <body>
 
-<p>Click on the icon to toggle between thumbs-up and thumbs-down (like/dislike):</p>
 
-<i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
-
+<i onclick="myFunctionA(this)" class="fa fa-thumbs-o-up"></i>
+<i onclick="myFunctionB(this)" class="fa fa-thumbs-o-down"></i>
 <script>
-function myFunction(x) {
+function myFunctionA(x) {
+  x.classList.toggle("fa-thumbs-up");
+}
+function myFunctionB(x) {
   x.classList.toggle("fa-thumbs-down");
 }
 </script>
